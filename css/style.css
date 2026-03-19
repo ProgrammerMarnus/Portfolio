@@ -1,0 +1,22 @@
+.underline-css 
+{
+position: relative;
+display: inline-block; 
+}
+
+.underline-css::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.underline-css:hover::after
+{
+    width: 100%;
+}
